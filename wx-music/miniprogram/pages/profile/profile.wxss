@@ -1,0 +1,25 @@
+/* pages/profile/profile.wxss */
+page {
+  background-color: #f1f1f1;
+}
+
+.profile-header {
+  background-color: #143c12;
+  background-size: cover;
+  height: 480rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-url {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  border: 6rpx solid #fff;
+}

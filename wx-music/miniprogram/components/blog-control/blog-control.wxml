@@ -1,0 +1,22 @@
+<!--components/blog-control/blog-control.wxml-->
+<view class="ctrl">
+  <view class="ctrl-item" bindtap="onComment" bindtap="onComment">
+    <i class="iconfont icon-pinglun icon"></i>
+    <text>评论</text>
+  </view>
+  <view class="ctrl-item share">
+    <button open-type="share" data-blogId="{{blogId}}" class="crl-btn">
+      <i class="iconfont icon-fenxiang icon"></i>
+      <text>分享</text>
+    </button>
+
+  </view>
+</view>
+
+<b-login modelShow="{{loginShow}}" bind:loginSuccess="handleLoginSuccess" bind:loginFail="handleLoginFail"></b-login>
+<b-bottomModel modelShow="{{bottomModel}}">
+  <form slot="modal-content" class="slot-container" report-submit="true" bind:submit="oncomment">
+    <textarea fixed class="comment-content" placeholder="写内容..." value="{{content}}" bindinput="onInput"></textarea>
+    <button class="comment-button" form-type="submit">发送</button>
+  </form>
+</b-bottomModel>

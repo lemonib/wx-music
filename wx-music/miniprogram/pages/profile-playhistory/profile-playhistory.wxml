@@ -1,0 +1,1 @@
+<b-musiclist musiclist="{{musicList}}"></b-musiclist>

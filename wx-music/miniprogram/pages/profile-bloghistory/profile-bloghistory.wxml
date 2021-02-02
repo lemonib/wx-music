@@ -1,0 +1,9 @@
+ <!-- card list -->
+ <view class="blog-list">
+    <block wx:for="{{blogList}}" wx:key="_id">
+      <view class="blog-panel">
+        <b-card blog="{{item}}" bindtap="goDetail" data-blogid="{{item._id}}"></b-card>
+        <b-control blogId="{{item._id}}" blog="{{item}}"></b-control>
+      </view>
+    </block>
+  </view>

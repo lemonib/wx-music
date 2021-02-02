@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "b-progressBar": "/components/progressBar/progressBar",
+    "b-lyric": "/components/lyric/lyric"
+  },
+  "disableScroll": true
+}

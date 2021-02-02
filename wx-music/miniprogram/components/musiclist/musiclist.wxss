@@ -1,0 +1,40 @@
+/* components/musiclist/musiclist.wxss */
+
+.musiclist-container {
+  display: flex;
+  padding: 14rpx 20rpx;
+  align-items: center;
+}
+
+.musiclist-index {
+  color: #888;
+  font-size: 34rpx;
+  width: 80rpx;
+}
+
+.musiclist-info {
+  flex-grow: 1;
+  width: 0;
+}
+
+.musiclist-name {
+  font-size: 28rpx;
+  color: #333;
+  white-space:nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.musiclist-singer {
+  white-space:nowrap; 
+  color: #aeaeae;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24rpx;
+}
+
+.playing view,
+.playing text{
+  color: #d43c33;
+}

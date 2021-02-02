@@ -1,0 +1,5 @@
+<b-bottomModel modelShow="{{modelShow}}">
+  <view slot="modal-content">
+    <button class="login-button" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">获取微信授权</button>
+  </view>
+</b-bottomModel>

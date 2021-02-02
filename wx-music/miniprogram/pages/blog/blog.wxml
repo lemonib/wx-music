@@ -1,0 +1,24 @@
+<view clas="container">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="publish-container" bindtap="onPublish">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="search-container">
+      <b-search iconfont="iconfont" icon-sousuo="icon-sousuo" bind:search="handleSearch"/>
+    </view>
+  </view>
+  <!-- card list -->
+  <view class="blog-list">
+    <block wx:for="{{blogList}}" wx:key="_id">
+      <view class="blog-panel">
+        <b-card blog="{{item}}" bindtap="goDetail" data-blogid="{{item._id}}"></b-card>
+        <b-control blogId="{{item._id}}" blog="{{item}}"></b-control>
+      </view>
+    </block>
+  </view>
+
+  <!--  -->
+  <b-login modelShow="{{modelShow}}" bind:loginSuccess="handleLoginSuccess" bind:loginFail="handleLoginFail"></b-login>
+
+</view>

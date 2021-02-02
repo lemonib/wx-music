@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "b-login": "/components/login/login",
+    "b-bottomModel": "/components/bottomModel/bottomModel"
+  }
+}
